@@ -3,7 +3,7 @@ package Chapter7;
 public class problem_5 {
 	
 	/**
-	 * Returns the most common number or one the most common in an array of integers given a range from 0 to 100, or -1 none is found (int[] nums, int max)
+	 * Returns the most common number or one the most common in an array of integers given a range from 0 to 100, or -1 if none is found
 	 * 
 	 * @param nums
 	 * @return
