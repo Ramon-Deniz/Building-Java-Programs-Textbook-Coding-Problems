@@ -1,4 +1,4 @@
-package Main.Chapter6;
+package Chapter6;
 
 import java.io.File;
 import java.io.FileNotFoundException;
