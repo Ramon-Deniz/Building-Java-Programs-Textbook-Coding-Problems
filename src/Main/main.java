@@ -8,6 +8,7 @@ import Chapter6.counting_words;
 import Chapter6.problem_12;
 import Chapter7.problem_1;
 import Chapter7.problem_5;
+import Chapter8.RationalNumber;
 
 public class main {
 	public static void main(String args[]) {
@@ -51,22 +52,40 @@ public class main {
 		System.out.print(Arrays.toString(nums));
 		
 		*/
+		
+		//----------problem_1--------------
+		/*
+
 		Random rand = new Random();
-		int num[] = new int[rand.nextInt(50)+20];
-		int num2[] = new int[rand.nextInt(5)+10];
+		int num[] = new int[100];
+		int num2[] = new int[100];
 		for(int i=0;i<num.length;i++) {
 			num[i]=rand.nextInt(9);
 			System.out.print(num[i]);
 		}
 		System.out.println();
+		for (int i = 0; i < num.length - num2.length; i++)
+			System.out.print(" ");
 		for(int i=0;i<num2.length;i++) {
 			num2[i]=rand.nextInt(9);
 			System.out.print(num2[i]);
 		}
+		long start = System.nanoTime();
 		System.out.println();
 		int sum[] = problem_1.getSum(num, num2);
 		for(int i=0;i<sum.length;i++) 
 			System.out.print(sum[i]);
+		System.out.println("-------"+(System.nanoTime()-start)/100000);
+		
+		*/
+		try {
+			RationalNumber test = new RationalNumber();
+			test.divide(56, 122);
+			System.out.println(test);
+		}
+		catch(IllegalArgumentException e) {
+			System.out.println("Denominator can not equal zero");
+		}
 		
 	}
 }

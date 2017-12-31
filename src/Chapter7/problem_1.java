@@ -8,7 +8,7 @@ public class problem_1 {
 	 * 
 	 * @param num
 	 * @param num2
-	 * @return
+	 * @return int[]
 	 */
 	public static int[] getSum(int[] num, int[] num2) {
 		if (num.length > num2.length)
@@ -30,4 +30,9 @@ public class problem_1 {
 		return sum;
 	}
 
+
 }
+
+
+
+
