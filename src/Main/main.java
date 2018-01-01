@@ -79,7 +79,7 @@ public class main {
 		
 		*/
 		try {
-			RationalNumber test = new RationalNumber();
+			RationalNumber test = new RationalNumber(1,2);
 			test.divide(56, 122);
 			System.out.println(test);
 		}
