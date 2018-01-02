@@ -1,14 +1,14 @@
 package Test.Chapter6Tests;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 
 class problem_12_test {
 
-	@Test
+	//@Test
 	void test() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 }

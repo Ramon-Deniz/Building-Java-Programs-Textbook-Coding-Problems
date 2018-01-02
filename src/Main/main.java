@@ -79,8 +79,8 @@ public class main {
 		
 		*/
 		try {
-			RationalNumber test = new RationalNumber(1,2);
-			test.divide(56, 122);
+			RationalNumber test = new RationalNumber();
+			test.add(-200,-200);
 			System.out.println(test);
 		}
 		catch(IllegalArgumentException e) {

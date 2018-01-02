@@ -27,6 +27,8 @@ public class RationalNumber {
 	 * @param denominator
 	 */
 	public void add(int numerator, int denominator) {
+            if (denominator == 0)
+			throw new IllegalArgumentException();
 		if (this.denominator == denominator) {
 			this.numerator += numerator;
 		} else {
@@ -55,6 +57,8 @@ public class RationalNumber {
 	 * @param denominator
 	 */
 	public void multiply(int numerator, int denominator) {
+            if (denominator == 0)
+			throw new IllegalArgumentException();
 		this.numerator *= numerator;
 		this.denominator *= denominator;
 	}
