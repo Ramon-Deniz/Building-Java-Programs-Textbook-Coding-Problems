@@ -19,17 +19,21 @@ public class Sphere implements Shape3D{
     
     @Override
     public double getVolume() {
-        return 4 * 3 * Math.PI * Math.pow(RADIUS, 3);
+        return Math.PI * Math.pow(RADIUS, 3)*4/3;
     }
 
     @Override
     public double getSurfaceArea() {
-        return 4 * Math.PI * Math.pow(RADIUS, 2);
+        return  Math.PI * Math.pow(RADIUS, 2)*4;
     }
     
     @Override
-    public double getSides(){
+    public int getSides(){
         return 0;
+    }
+    
+    public double getRadius(){
+        return RADIUS;
     }
 
 }

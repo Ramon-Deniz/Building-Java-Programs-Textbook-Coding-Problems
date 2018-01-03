@@ -32,11 +32,11 @@ public class RectangularPrism implements Shape3D {
 
     @Override
     public double getSurfaceArea() {
-        return (WIDTH * LENGTH + 2) + (WIDTH * HEIGHT * 2) + (LENGTH * HEIGHT * 2);
+        return (WIDTH * LENGTH * 2) + (WIDTH * HEIGHT * 2) + (LENGTH * HEIGHT * 2);
     }
 
     @Override
-    public double getSides() {
+    public int getSides() {
         return 6;
     }
 

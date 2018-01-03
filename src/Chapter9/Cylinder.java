@@ -21,16 +21,24 @@ public class Cylinder implements Shape3D{
     
     @Override
     public double getVolume() {
-        return 4 * 3 * Math.PI * Math.pow(RADIUS, 3);
+        return Math.PI*Math.pow(RADIUS, 2)*HEIGHT;
     }
 
     @Override
     public double getSurfaceArea() {
-        return 4 * Math.PI * Math.pow(RADIUS, 2);
+        return RADIUS*HEIGHT*2*Math.PI+Math.pow(RADIUS, 2)*Math.PI*2;
     }
     
     @Override
-    public double getSides(){
+    public int getSides(){
         return 2;
+    }
+    
+    public double getRadius(){
+        return RADIUS;
+    }
+    
+    public double getHeight(){
+        return HEIGHT;
     }
 }

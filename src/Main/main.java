@@ -17,7 +17,19 @@ public class main {
         try {
             Cube newShape = new Cube(3);
             System.out.println(newShape.getVolume());
-            System.out.println(newShape.getHeight());
+            System.out.println(newShape.getSurfaceArea());
+            System.out.println();
+            RectangularPrism newShape2 = new RectangularPrism(3,4,5);
+            System.out.println(newShape2.getVolume());
+            System.out.println(newShape2.getSurfaceArea());
+            System.out.println();
+            Sphere newShape3 = new Sphere(4);
+            System.out.println(newShape3.getVolume());
+            System.out.println(newShape3.getSurfaceArea());
+            System.out.println();
+            Cylinder newShape4 = new Cylinder(3,7);
+            System.out.println(newShape4.getVolume());
+            System.out.println(newShape4.getSurfaceArea());
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
