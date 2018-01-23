@@ -1,11 +1,20 @@
 package Main;
 
-import Chapter12.Problem_15;
-import Chapter12.Problem_2;
+import Chapter13.Merge;
+import java.util.Arrays;
+import java.util.Random;
 
 public class main {
 
     public static void main(String args[]) {
-        System.out.println(Problem_15.permut(1, 1));
+        int[] numbers = new int[1000];
+        Random rand = new Random();
+        for(int i=0;i<numbers.length;i++){
+            numbers[i]=rand.nextInt(1000000);
+        }
+        System.out.println("Start");
+        long start = System.currentTimeMillis();
+        numbers = Merge.mergeSort(numbers);
+        System.out.println("Finished: "+(System.currentTimeMillis()-start) );
     }
 }
